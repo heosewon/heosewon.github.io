@@ -52,7 +52,7 @@
   document.querySelectorAll('[data-theme-choice]').forEach(button => button.addEventListener('click', () => applyTheme(button.dataset.themeChoice)));
   document.querySelectorAll('[data-language]').forEach(button => button.addEventListener('click', () => {
     const wasAtBottom = document.documentElement.scrollHeight - innerHeight - scrollY <= 2;
-    const activeSection = sections.find(section => section.id === document.querySelector('.topbar nav a.active')?.hash.slice(1));
+    const activeSection = sections.find(section => section.id === location.hash.slice(1)) || sections.find(section => section.id === document.querySelector('.topbar nav a.active')?.hash.slice(1));
     applyLanguage(button.dataset.language);
     requestAnimationFrame(() => {
       if (wasAtBottom) window.scrollTo(0, document.documentElement.scrollHeight);
