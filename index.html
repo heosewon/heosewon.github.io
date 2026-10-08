@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light">
+<title>허세원 | DBA · 데이터베이스 운영과 개발</title>
+<meta name="description" content="허세원의 DBA 포트폴리오. 프리스톤테일M 글로벌 DB 운영, 서버 통합, 콘텐츠 DB 개발과 Python 데이터 엔지니어링 개인 프로젝트.">
+<meta property="og:title" content="허세원 | DBA Portfolio"><meta property="og:description" content="라이브 게임 데이터베이스 운영과 콘텐츠 DB 개발, 그리고 데이터 엔지니어링 프로젝트."><meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232552df'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-weight='700' font-size='31' fill='white'%3ESH%3C/text%3E%3C/svg%3E">
+<script>
+try { const theme = localStorage.getItem('portfolio-theme'); if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme; } catch (_) {}
+</script>
+<link rel="stylesheet" href="style.css?v=5"><script defer src="translations.js?v=5"></script><script defer src="script.js?v=5"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">본문 바로가기</a>
+<header class="topbar">
+<a class="wordmark" href="#about" aria-label="허세원 소개"><span class="monogram">SH</span> HEO SEWON<span class="wordmark-dot">.</span></a>
+<nav aria-label="주요 메뉴"><a href="#about" class="active">소개</a><a href="#experience">경력</a><a href="#work">실무 프로젝트</a><a href="#personal">개인 프로젝트</a><a href="#background">학력·자격</a></nav>
+<div class="preferences">
+<div class="segmented theme-switch" role="group" aria-label="화면 테마">
+<button type="button" data-theme-choice="dark" aria-label="어두움" title="어두움" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.2A8.6 8.6 0 0 1 8.8 3.8 8.7 8.7 0 1 0 20.2 15.2Z" fill="currentColor"/></svg></button>
+<button type="button" data-theme-choice="light" aria-label="밝음" title="밝음" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="3.8"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button>
+</div>
+<div class="segmented language-switch" role="group" aria-label="표시 언어">
+<button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+<button type="button" data-language="ko" lang="ko" aria-label="한국어" aria-pressed="true">KR</button>
+</div></div>
+</header>
+<main id="main">
+<section class="hero section-shell" id="about" aria-labelledby="hero-title">
+<figure class="profile"><img src="assets/profile.jpg" alt="허세원 프로필 사진" width="1050" height="1350"><figcaption>HEO SEWON</figcaption></figure>
+<div class="hero-copy"><p class="eyebrow">DATABASE ADMINISTRATOR</p><div class="name-line"><h1 id="hero-title">허세원</h1><span class="profession">DBA</span></div>
+<p class="hero-lead">라이브 서비스 운영부터<br>게임 콘텐츠 데이터베이스 설계까지.</p>
+<p class="intro">SQL Server 기반 게임 DB의 운영·장애 대응·서버 통합과 테이블·저장 프로시저 개발을 수행했습니다. 데이터의 귀속과 상태 전이, 변경 조건을 검토하고 게임 서버와 DB의 처리 규칙을 함께 설계합니다.</p>
+<div class="hero-links"><a class="button primary" href="#work">실무 프로젝트</a><a class="button" href="https://github.com/heosewon" target="_blank" rel="noopener noreferrer">GitHub</a></div></div>
+<div class="expertise-strip"><div><span class="mini-label">CORE</span><p>SQL Server · T-SQL · AWS</p></div><div><span class="mini-label">OPERATIONS</span><p>Grafana · Log Shipping · PITR</p></div><div><span class="mini-label">DATA ENGINEERING</span><p>Python · ETL · DW / DM</p></div></div>
+</section>
+
+<section id="experience" class="section-shell ruled" aria-labelledby="experience-title">
+<div class="section-heading"><div><p class="eyebrow">01 / EXPERIENCE</p><h2 id="experience-title">경력</h2></div></div>
+<div class="career-list">
+<article class="career current"><p class="period">2022.04 — 현재</p><div><h3>파우게임즈 <span class="badge">재직 중</span></h3></div><span class="role">DBA</span></article>
+<article class="career"><p class="period">2021.11 — 2022.02</p><div><h3>모히또게임즈</h3><p>대항해시대·주사위의 신·히어로볼 라이브 점검과 CS 데이터 처리. AWS RDS 모니터링 및 ASP 운영 도구의 지표·로그 조회 화면 유지보수.</p></div><span class="role">DBA</span></article>
+<article class="career"><p class="period">2020.03 — 2021.09</p><div><h3>인터플렉스</h3><p>Oracle EBS 11 인사·생산 모듈과 Oracle Forms 유지보수. 고객사 코드·제품 QR Rule 중복 관리 기능을 PL/SQL로 개발하고, Report Designer 생산·근태 리포트와 HTML 메일링, ERP·그룹웨어 인사 정보 연동을 구현했습니다.</p></div><span class="role">ERP · 전산</span></article>
+<article class="career"><p class="period">2017.11 — 2018.09</p><div><h3>에스원</h3><p>고객 관리 및 보안 서비스 영업</p></div><span class="role">보안영업</span></article>
+</div></section>
+
+<section id="work" class="section-shell ruled" aria-labelledby="work-title">
+<div class="section-heading"><div><p class="eyebrow">02 / SELECTED WORK</p><h2 id="work-title">실무 프로젝트</h2></div></div>
+<article class="featured">
+<div class="featured-image"><img src="assets/pristontale-m.jpg" width="1144" height="629" alt="프리스톤테일M 4주년 타이틀 화면" loading="lazy"></div>
+<div class="featured-copy"><p class="eyebrow">LIVE MMORPG · FOW GAMES</p><h3>프리스톤테일M</h3><p>PC 게임 IP를 모바일로 재구성한 글로벌 MMORPG 프로젝트입니다. 국가별 서비스 오픈에 참여하고 콘텐츠 DB 개발과 라이브 운영을 담당했습니다.</p><div class="launches" aria-label="지역별 서비스 오픈"><div><strong>한국</strong><span>2022.09</span></div><div><strong>대만</strong><span>2023.04</span></div><div><strong>일본</strong><span>2024.03</span></div></div></div>
+</article>
+<nav class="work-nav" aria-label="실무 프로젝트 상세 메뉴"><a href="#operations">운영 문제 해결</a><a href="#quest">퀘스트 시스템</a><a href="#faction">점령전 시스템</a></nav><div class="operations"><h3>담당 범위</h3><p>AWS 기반 라이브·알파·리뷰 DB 환경 구성과 분리, DB 개체의 Git 변경 관리, 배포·정기 점검, 운영·QA 데이터 추출 및 보정을 수행했습니다. 기획·서버·운영팀과 입력 형식, 실패 처리, 배포 순서와 데이터 보존 기준을 협의했습니다.</p></div>
+<div class="subsection-heading" id="operations"><h3>운영에서 해결한 문제</h3><span>문제 · 접근 · 적용</span></div>
+<article class="case-study"><div class="case-index">01</div><div class="case-body"><p class="mini-label">COMPATIBILITY</p><h4>서버 통합의 SQL 버전 호환성 해결</h4><p>테스트에서 사용한 <code>GET_BIT()</code>가 실제 통합 대상인 SQL Server 2019에서 지원되지 않았습니다. 별자리 진행 상태의 병합 규칙을 분석하고, 비트 위치·마스크 테이블과 AND 연산을 사용하는 <code>fnGetBit</code> 함수를 구현했습니다.</p><p class="result"><strong>적용</strong> 높은 별자리 페이지를 우선하고, 같은 페이지에서는 활성 비트를 유지하는 로직을 통합 테스트와 실제 라이브 서버 통합에 적용했습니다.</p><details class="implementation" open><summary>비트 마스크 테이블과 대체 함수 전체 구현</summary><div class="code-panel"><div class="code-toolbar"><span>SQL Server 2019 · 비트 플래그 조회</span><div><span class="code-language">T-SQL</span><button type="button" class="copy-code">코드 복사</button></div></div><pre tabindex="0" aria-label="SQL Server 2019 · 비트 플래그 조회"><code><span class="code-line"><span class="tok-keyword">USE</span> GameUnion;</span>
+<span class="code-line"><span class="tok-keyword">GO</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="tok-keyword">DROP</span> <span class="tok-keyword">TABLE</span> <span class="tok-keyword">IF</span> <span class="tok-keyword">EXISTS</span> dbo.TBit;</span>
+<span class="code-line"><span class="tok-keyword">GO</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="tok-keyword">WITH</span> TBit <span class="tok-keyword">AS</span></span>
+<span class="code-line">(</span>
+<span class="code-line">    <span class="tok-keyword">SELECT</span> <span class="tok-number">0</span> <span class="tok-keyword">AS</span> N, <span class="tok-keyword">POWER</span>(<span class="tok-number">2</span>, <span class="tok-number">0</span>) <span class="tok-keyword">AS</span> [Bit]</span>
+<span class="code-line">    <span class="tok-keyword">UNION</span> <span class="tok-keyword">ALL</span></span>
+<span class="code-line">    <span class="tok-keyword">SELECT</span> N + <span class="tok-number">1</span>, <span class="tok-keyword">POWER</span>(<span class="tok-number">2</span>, N + <span class="tok-number">1</span>)</span>
+<span class="code-line">    <span class="tok-keyword">FROM</span> TBit</span>
+<span class="code-line">    <span class="tok-keyword">WHERE</span> N &lt; <span class="tok-number">25</span></span>
+<span class="code-line">)</span>
+<span class="code-line"><span class="tok-keyword">SELECT</span> N, [Bit]</span>
+<span class="code-line"><span class="tok-keyword">INTO</span> dbo.TBit</span>
+<span class="code-line"><span class="tok-keyword">FROM</span> TBit;</span>
+<span class="code-line"><span class="tok-keyword">GO</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="tok-keyword">DROP</span> <span class="tok-keyword">FUNCTION</span> <span class="tok-keyword">IF</span> <span class="tok-keyword">EXISTS</span> dbo.fnGetBit;</span>
+<span class="code-line"><span class="tok-keyword">GO</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="tok-keyword">CREATE</span> <span class="tok-keyword">FUNCTION</span> dbo.fnGetBit</span>
+<span class="code-line">(</span>
+<span class="code-line">    <span class="tok-variable">@StepFlag</span> <span class="tok-keyword">INT</span>,</span>
+<span class="code-line">    <span class="tok-variable">@No</span>       <span class="tok-keyword">INT</span></span>
+<span class="code-line">)</span>
+<span class="code-line"><span class="tok-keyword">RETURNS</span> <span class="tok-keyword">INT</span></span>
+<span class="code-line"><span class="tok-keyword">AS</span></span>
+<span class="code-line"><span class="tok-keyword">BEGIN</span></span>
+<span class="code-line">    <span class="tok-keyword">RETURN</span></span>
+<span class="code-line">    (</span>
+<span class="code-line">        <span class="tok-keyword">SELECT</span> <span class="tok-keyword">IIF</span>([Bit] &amp; <span class="tok-variable">@StepFlag</span> &lt;&gt; <span class="tok-number">0</span>, <span class="tok-number">1</span>, <span class="tok-number">0</span>)</span>
+<span class="code-line">        <span class="tok-keyword">FROM</span> dbo.TBit</span>
+<span class="code-line">        <span class="tok-keyword">WHERE</span> N = <span class="tok-variable">@No</span></span>
+<span class="code-line">    );</span>
+<span class="code-line"><span class="tok-keyword">END</span>;</span>
+<span class="code-line"><span class="tok-keyword">GO</span></span></code></pre><div class="code-source">실제 구현 쿼리 · 비트 마스크 테이블 생성 및 SQL Server 2019 호환 함수</div></div></details></div></article>
+<article class="case-study"><div class="case-index">02</div><div class="case-body"><p class="mini-label">PERFORMANCE &amp; COLLABORATION</p><h4>개별 로그 호출을 일괄 저장으로 전환</h4><p>아이템 습득·소모마다 호출되는 저장 프로시저의 호출량과 리소스 패턴을 Grafana에서 확인했습니다. 서버 사양을 낮춰야 하는 상황에서, 게임 서버 개발자와 버퍼링 및 DB 처리 방식을 함께 변경했습니다.</p><div class="flow"><span>아이템 획득·소모</span><span>게임 서버 메모리 누적</span><span>10건 또는 10초</span><span>일괄 SP 호출</span></div><p class="result"><strong>적용</strong> 개별 프로시저 호출 빈도를 구조적으로 줄이고, 변경 후 호출 집중과 리소스 사용 상태를 모니터링했습니다.</p><details class="implementation" open><summary>순차 키 로그 테이블: 지표에서 인덱스 설정까지</summary><div class="detail-content"><p>CPU가 100%에 가깝게 상승한 구간에서 Batch Requests/sec 증가와 시간 열 기반 클러스터드 인덱스를 확인했습니다. OFF로 변경된 <code>OPTIMIZE_FOR_SEQUENTIAL_KEY</code> 설정을 원복하고 인덱스를 재구성한 뒤 CPU와 서비스 응답을 관찰했습니다.</p></div></details></div></article>
+<article class="case-study"><div class="case-index">03</div><div class="case-body"><p class="mini-label">RECOVERY &amp; DATA LIFECYCLE</p><h4>복구 가능한 백업과 데이터 보존 정책 운영</h4><div class="three-points"><div><h5>특정 시점 복구</h5><p>Log Shipping 운영과 15분 단위 로그 백업 체인을 점검했습니다. Full·Differential·Log 순서와 연속성을 확인하고 <code>STOPAT</code>으로 목표 시점까지 복원했습니다.</p></div><div><h5>우편 데이터 정제</h5><p>최근 3개월 보존 기준에 맞춰 대상 데이터를 Heap에 옮긴 후 원본을 초기화·재적재하고, 주간 보존 정책으로 전환했습니다.</p></div><div><h5>디스크 공간 반환</h5><p>930GB 규모 로그 DB 정제 후 공간 반환을 위해 <code>DBCC SHRINKFILE</code>을 1회 수행했습니다. 정기 유지보수로 사용한 작업은 아닙니다.</p></div></div></div></article>
+<div class="subsection-heading"><h3>콘텐츠 DB 설계와 구현</h3><span>DATA MODEL · TRANSACTION · DB API</span></div>
+<article class="engineering" id="quest">
+<div class="engineering-heading"><div><p class="eyebrow">CONTENT DATABASE / 01</p><h3>퀘스트 시스템</h3></div></div>
+<p class="engineering-intro">메인·서브·가이드·지령서·개인의뢰·업적의 귀속 주체, 반복 가능 여부, 만료와 동시 진행 수를 분석했습니다. 데이터 소유권과 상태 전이를 기준으로 테이블과 프로시저 책임을 분리했습니다.</p>
+<h4 class="topic-heading">01. 데이터 모델과 책임 분리</h4><div class="table-scroll" tabindex="0" role="region" aria-label="데이터 소유권 상세 표"><table><thead><tr><th scope="col">데이터 소유권</th><th scope="col">테이블</th><th scope="col">설계 책임</th></tr></thead><tbody><tr><td>캐릭터 진행</td><td><code>TQuest</code></td><td>캐릭터별 현재 퀘스트와 진행 수치</td></tr><tr><td>계정 공유</td><td><code>TQuestAccount</code></td><td>업적·이벤트 등 계정 단위 공유 상태</td></tr><tr><td>완료 이력</td><td><code>TQuestComplete</code></td><td>OwnerType으로 귀속 주체를 구분한 완료 이력</td></tr><tr><td>의뢰 목록</td><td><code>TQuestRequestGroup</code><br><code>TQuestRequest</code></td><td>갱신 횟수·목록·초기화 시각 관리</td></tr></tbody></table></div>
+<div class="flow"><span>현재 상태 검증</span><span>완료 상태 변경</span><span>중복 완료 검증</span><span>보상·아이템 반영</span><span>COMMIT</span></div>
+<h4 class="topic-heading">02. 변경 조건과 트랜잭션</h4>
+<div class="technical-split"><div><p>아이템 변경 시 고유 ID뿐 아니라 서버가 알고 있는 이전 수량을 JOIN 조건에 포함했습니다. DB 현재 값이 다르면 해당 행은 변경되지 않으며, 이후 건수 검증과 오류 처리로 이어집니다.</p>
+<dl class="design-notes"><div><dt>원자적 변경</dt><dd>아이템 차감과 퀘스트 수락, 완료 상태와 보상처럼 함께 성공해야 하는 작업을 명시적 트랜잭션에 포함했습니다.</dd></div><div><dt>실패 처리</dt><dd>XACT_ABORT ON, TRY/CATCH, CATCH의 rollback을 사용했습니다. 오류 번호를 OUTPUT에 설정하고 TProcedureError에 기록한 뒤 다시 THROW하는 구조입니다.</dd></div></dl></div><div class="code-panel"><div class="code-toolbar"><span>이전 값 조건을 포함한 아이템 변경</span><div><span class="code-language">T-SQL</span><button type="button" class="copy-code">코드 복사</button></div></div><pre tabindex="0" aria-label="이전 값 조건을 포함한 아이템 변경"><code><span class="code-line"><span class="tok-keyword">UPDATE</span> A</span>
+<span class="code-line"><span class="tok-keyword">SET</span> A.StackCount = B.StackCount</span>
+<span class="code-line"><span class="tok-keyword">FROM</span> dbo.TItem A</span>
+<span class="code-line"><span class="tok-keyword">JOIN</span> <span class="tok-variable">@JsonTable</span> B</span>
+<span class="code-line">    <span class="tok-keyword">ON</span> A.ItemUniqueID = B.ItemUniqueID</span>
+<span class="code-line">   <span class="tok-keyword">AND</span> A.StackCount = B.PrevStackCount</span>
+<span class="code-line"><span class="tok-keyword">WHERE</span> B.DBFlag = <span class="tok-number">2</span>;</span></code></pre><div class="code-source">실제 구현 코드 발췌 · 이전 값 조건을 포함한 UPDATE</div></div></div>
+<details class="implementation" open><summary>JSON 파싱 → 조건부 UPDATE → 건수 검증 → COMMIT / ROLLBACK</summary>
+<p class="code-context">아래 코드는 JSON 입력과 변경 검증 규칙을 연결한 <strong>설명용 재구성 예시</strong>입니다. 원본 전체 프로시저는 아니며, 변수명·검증용 오류 50000·트랜잭션 골격을 예시로 구성했습니다. 실제 코드의 오류 기록·OUTPUT 및 나머지 DML 경로는 생략했습니다.</p><div class="code-panel"><div class="code-toolbar"><span>아이템 일괄 변경 · 처리 구조</span><div><span class="code-language">T-SQL</span><button type="button" class="copy-code">코드 복사</button></div></div><pre tabindex="0" aria-label="아이템 일괄 변경 · 처리 구조"><code><span class="code-line"><span class="tok-comment">-- 설명용 재구성: 아이템 UPDATE 경로만 표현</span></span>
+<span class="code-line"><span class="tok-comment">-- @ItemJson은 프로시저 입력 파라미터를 가정합니다.</span></span>
+<span class="code-line"><span class="tok-comment">-- 원본 프로시저 전체 또는 즉시 실행용 스크립트가 아닙니다.</span></span>
+<span class="code-line"><span class="tok-keyword">SET</span> <span class="tok-keyword">XACT_ABORT</span> <span class="tok-keyword">ON</span>;</span>
+<span class="code-line"></span>
+<span class="code-line"><span class="tok-keyword">DECLARE</span> <span class="tok-variable">@JsonTable</span> <span class="tok-keyword">TABLE</span></span>
+<span class="code-line">(</span>
+<span class="code-line">    ItemUniqueID   <span class="tok-keyword">BIGINT</span>,</span>
+<span class="code-line">    ItemTemplateID <span class="tok-keyword">INT</span>,</span>
+<span class="code-line">    StackCount     <span class="tok-keyword">INT</span>,</span>
+<span class="code-line">    DBFlag         <span class="tok-keyword">INT</span>,</span>
+<span class="code-line">    PrevStackCount <span class="tok-keyword">INT</span></span>
+<span class="code-line">);</span>
+<span class="code-line"></span>
+<span class="code-line"><span class="tok-keyword">DECLARE</span> <span class="tok-variable">@ExpectedCount</span> <span class="tok-keyword">INT</span>;</span>
+<span class="code-line"><span class="tok-keyword">DECLARE</span> <span class="tok-variable">@AppliedCount</span>  <span class="tok-keyword">INT</span>;</span>
+<span class="code-line"></span>
+<span class="code-line"><span class="tok-keyword">BEGIN</span> <span class="tok-keyword">TRY</span></span>
+<span class="code-line">    <span class="tok-keyword">BEGIN</span> <span class="tok-keyword">TRANSACTION</span>;</span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="tok-comment">-- 1. JSON 입력을 자료형이 지정된 행 집합으로 변환</span></span>
+<span class="code-line">    <span class="tok-keyword">INSERT</span> <span class="tok-keyword">INTO</span> <span class="tok-variable">@JsonTable</span></span>
+<span class="code-line">    <span class="tok-keyword">SELECT</span> ItemUniqueID, ItemTemplateID,</span>
+<span class="code-line">           StackCount, DBFlag, PrevStackCount</span>
+<span class="code-line">    <span class="tok-keyword">FROM</span> <span class="tok-keyword">OPENJSON</span>(<span class="tok-variable">@ItemJson</span>)</span>
+<span class="code-line">    <span class="tok-keyword">WITH</span></span>
+<span class="code-line">    (</span>
+<span class="code-line">        ItemUniqueID   <span class="tok-keyword">BIGINT</span> <span class="tok-string">&#x27;$.uid&#x27;</span>,</span>
+<span class="code-line">        ItemTemplateID <span class="tok-keyword">INT</span>    <span class="tok-string">&#x27;$.tid&#x27;</span>,</span>
+<span class="code-line">        StackCount     <span class="tok-keyword">INT</span>    <span class="tok-string">&#x27;$.sc&#x27;</span>,</span>
+<span class="code-line">        DBFlag         <span class="tok-keyword">INT</span>    <span class="tok-string">&#x27;$.flag&#x27;</span>,</span>
+<span class="code-line">        PrevStackCount <span class="tok-keyword">INT</span>    <span class="tok-string">&#x27;$.psc&#x27;</span></span>
+<span class="code-line">    );</span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="tok-comment">-- 2. 변경 대상으로 전달된 입력 건수</span></span>
+<span class="code-line">    <span class="tok-keyword">SELECT</span> <span class="tok-variable">@ExpectedCount</span> = <span class="tok-keyword">COUNT</span>(*)</span>
+<span class="code-line">    <span class="tok-keyword">FROM</span> <span class="tok-variable">@JsonTable</span></span>
+<span class="code-line">    <span class="tok-keyword">WHERE</span> DBFlag = <span class="tok-number">2</span>;</span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="tok-comment">-- 3. 서버가 전달한 이전 값과 DB 현재 값이 같을 때만 변경</span></span>
+<span class="code-line">    <span class="tok-keyword">UPDATE</span> A</span>
+<span class="code-line">    <span class="tok-keyword">SET</span> A.StackCount = B.StackCount</span>
+<span class="code-line">    <span class="tok-keyword">FROM</span> dbo.TItem A</span>
+<span class="code-line">    <span class="tok-keyword">JOIN</span> <span class="tok-variable">@JsonTable</span> B</span>
+<span class="code-line">        <span class="tok-keyword">ON</span> A.ItemUniqueID = B.ItemUniqueID</span>
+<span class="code-line">       <span class="tok-keyword">AND</span> A.StackCount = B.PrevStackCount</span>
+<span class="code-line">    <span class="tok-keyword">WHERE</span> B.DBFlag = <span class="tok-number">2</span>;</span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="tok-keyword">SET</span> <span class="tok-variable">@AppliedCount</span> = <span class="tok-variable">@@ROWCOUNT</span>;</span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="tok-comment">-- 4. 입력 대비 누락을 감지하고 전체 변경을 되돌림</span></span>
+<span class="code-line">    <span class="tok-keyword">IF</span> <span class="tok-variable">@AppliedCount</span> &lt;&gt; <span class="tok-variable">@ExpectedCount</span></span>
+<span class="code-line">        <span class="tok-keyword">THROW</span> <span class="tok-number">50000</span>, <span class="tok-string">N&#x27;입력 건수와 변경 건수가 다릅니다.&#x27;</span>, <span class="tok-number">1</span>;</span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="tok-keyword">COMMIT</span> <span class="tok-keyword">TRANSACTION</span>;</span>
+<span class="code-line"><span class="tok-keyword">END</span> <span class="tok-keyword">TRY</span></span>
+<span class="code-line"><span class="tok-keyword">BEGIN</span> <span class="tok-keyword">CATCH</span></span>
+<span class="code-line">    <span class="tok-keyword">IF</span> <span class="tok-keyword">XACT_STATE</span>() &lt;&gt; <span class="tok-number">0</span></span>
+<span class="code-line">        <span class="tok-keyword">ROLLBACK</span> <span class="tok-keyword">TRANSACTION</span>;</span>
+<span class="code-line">    <span class="tok-keyword">THROW</span>;</span>
+<span class="code-line"><span class="tok-keyword">END</span> <span class="tok-keyword">CATCH</span>;</span></code></pre><div class="code-source">처리 규칙 재구성 · JSON 키와 자료형 및 이전 값 UPDATE 조건은 원문 기준.</div></div></details>
+<h4 class="topic-heading">03. 서버 이벤트에 맞춘 DB API</h4><div class="table-scroll" tabindex="0" role="region" aria-label="프로시저 상세 표"><table><thead><tr><th scope="col">프로시저</th><th scope="col">서버 호출 시점</th><th scope="col">DB 처리와 검증</th></tr></thead><tbody><tr><td><code>spQuestList</code></td><td>캐릭터 로그인</td><td>계정·캐릭터 목록 UNION 조회 · READ UNCOMMITTED</td></tr><tr><td><code>spQuestAcceptHero</code></td><td>메인·서브·가이드·의뢰 수락</td><td>진행 행 INSERT / UPDATE · 완료 상태와 기존 행 확인</td></tr><tr><td><code>spQuestAcceptAccount</code></td><td>업적·이벤트 지급</td><td>JSON 목록 일괄 반영 · 계정 공유와 중복 확인</td></tr><tr><td><code>spQuestAcceptMission</code></td><td>지령서 아이템 사용</td><td>아이템 차감과 수락을 같은 트랜잭션으로 처리</td></tr><tr><td><code>spQuestProcess</code></td><td>서버에서 1분마다</td><td>계정·캐릭터 진행 UPDATE · 입력 수와 반영 수 비교</td></tr><tr><td><code>spQuestComplete</code></td><td>퀘스트 완료</td><td>중복 완료 확인 · 이력·재화·경험치·아이템 반영</td></tr><tr><td><code>spQuestGiveUp</code></td><td>포기 요청</td><td>포기 가능 유형 확인 후 진행 행 삭제</td></tr><tr><td><code>spQuestRequestReset</code></td><td>갱신 또는 초기화</td><td>이전 재화 값 검증 · 차감 및 의뢰 목록 교체</td></tr><tr><td><code>innerJsonItem</code></td><td>완료·보상 내부 호출</td><td>DBFlag에 따른 아이템 INSERT / UPDATE / DELETE 공통화</td></tr></tbody></table></div>
+<h4 class="topic-heading">04. 진행 정보의 입력 계약과 반영 건수 검증</h4>
+<div class="technical-split"><div><span class="mini-label">QUEST INPUT</span><p><code>iqi → InitialQuestID / INT</code><br><code>pfc → PerformingCount / INT</code><br><code>ias → IsAccountShared / BIT</code></p><dl class="design-notes"><div><dt>계정·캐릭터 변경의 누락 확인</dt><dd>입력된 진행 정보는 귀속 주체에 따라 서로 다른 테이블에 반영됩니다. 입력 건수에서 각 UPDATE의 반영 건수를 차감하고, 남은 건수가 0이 아니면 오류 50046을 발생시킵니다.</dd></div></dl></div>
+<div class="code-panel"><div class="code-toolbar"><span>spQuestProcess · 반영 건수 검증</span><div><span class="code-language">T-SQL</span><button type="button" class="copy-code">코드 복사</button></div></div><pre tabindex="0" aria-label="퀘스트 반영 건수 검증"><code><span class="code-line"><span class="tok-keyword">DECLARE</span> <span class="tok-variable">@ResultCount</span> <span class="tok-keyword">INT</span> = <span class="tok-variable">@@ROWCOUNT</span>;</span>
+<span class="code-line"></span>
+<span class="code-line"><span class="tok-comment">-- 계정 · 캐릭터 UPDATE 뒤 각각 차감</span></span>
+<span class="code-line"><span class="tok-keyword">SET</span> <span class="tok-variable">@ResultCount</span> -= <span class="tok-variable">@@ROWCOUNT</span>;</span>
+<span class="code-line"></span>
+<span class="code-line"><span class="tok-keyword">IF</span> <span class="tok-variable">@ResultCount</span> &lt;&gt; <span class="tok-number">0</span></span>
+<span class="code-line">    <span class="tok-keyword">THROW</span> <span class="tok-number">50046</span>, <span class="tok-string">N&#x27;퀘스트 업데이트 실패&#x27;</span>, <span class="tok-number">1</span>;</span></code></pre><div class="code-source">실제 구현의 검증 구문 발췌 · 입력 적재와 계정·캐릭터 UPDATE 본문은 생략되어 있으며, 차감 구문은 각 UPDATE 직후에 위치합니다.</div></div></div>
+<p class="scope-note">목록 조회의 READ UNCOMMITTED는 커밋 전 데이터를 읽을 수 있습니다. 지령서·의뢰의 길드 기능은 당시 구현 범위에 포함되지 않았습니다.</p>
+</article><article class="engineering" id="faction">
+<div class="engineering-heading"><div><p class="eyebrow">CONTENT DATABASE / 02</p><h3>점령전 시스템</h3></div></div>
+<p class="engineering-intro">점수·순위 계산과 캐릭터별 보상 지급이 서로 다른 DB에서 이뤄지는 콘텐츠입니다. 신청부터 월·분기 정산까지의 호출 순서와 데이터 전달 규칙을 정의했습니다.</p>
+<div class="architecture"><div><span class="mini-label">UserDB</span><h4>참가 · 결과 · 랭킹</h4><p>신청과 진영 배정<br>일반·시즌 점수 누적<br>서버 그룹별 순위 계산</p></div><div><span class="mini-label">GAME SERVER</span><h4>대상 확인 · 전달</h4><p>참가자·랭킹 조회<br>캐릭터의 GameDB 식별<br>보상 프로시저 호출</p></div><div><span class="mini-label">GameDB</span><h4>정산 · 우편 · 아이템</h4><p>월·시즌 랭킹 반영<br>수령 상태 검증<br>점수 및 랭킹 보상 지급</p></div></div>
+<div class="flow"><span>월~목 / 신청</span><span>시작 전날 / 진영 배정</span><span>금요일 22시 / 점령전</span><span>종료 후 / 결과·랭킹</span></div>
+<h4 class="topic-heading">01. 신청부터 랭킹 갱신까지</h4><div class="table-scroll" tabindex="0" role="region" aria-label="UserDB 프로시저 상세 표"><table><thead><tr><th scope="col">UserDB 프로시저</th><th scope="col">처리 시점</th><th scope="col">처리 책임</th></tr></thead><tbody><tr><td><code>spFactionWarRegister</code><br><code>spFactionWarRegisterList</code></td><td>월~목 신청 기간</td><td>시작 시각·계정 기준 기존 신청 여부 확인 및 목록 반환</td></tr><tr><td><code>spFactionWarUnionCheck</code></td><td>시작 전날 · 진영당 1회</td><td>진영별 Hero 목록을 받아 UnionID 반영</td></tr><tr><td><code>spFactionWarResult</code></td><td>점령전 종료 · 진영별 호출</td><td>일반·시즌 점수 누적 및 점수 로그 저장</td></tr><tr><td><code>spFactionWarPersonalScore</code><br><code>spFactionWarPersonalScoreList</code></td><td>종료 / 최근 점수 조회</td><td>몬스터·타워·게이트·성 점수 저장과 반환</td></tr><tr><td><code>spFactionWarWinner</code><br><code>spFactionWarWinnerList</code></td><td>종료 / 승리 진영 조회</td><td>서버 그룹별 최종 진영 점수 저장 및 1위 반환</td></tr><tr><td><code>spFactionWarRankUpdate</code><br><code>spFactionWarRank</code></td><td>결과 반영 이후</td><td>spFactionWarResult 이후 서버 그룹별 일반(1)·시즌(2) 랭킹 재계산 및 반환</td></tr><tr><td><code>spFactionWarScoreInit</code></td><td>월·분기 초기화</td><td>Flag 1: 일반 점수 / Flag 2: 일반·시즌 점수 초기화</td></tr></tbody></table></div>
+<h4 class="topic-heading">02. GameDB 정산과 보상</h4><div class="table-scroll" tabindex="0" role="region" aria-label="GameDB 프로시저 상세 표"><table><thead><tr><th scope="col">GameDB 프로시저</th><th scope="col">호출 시점</th><th scope="col">처리 책임</th></tr></thead><tbody><tr><td><code>spFactionWarScoreReward</code></td><td>점령전 종료 후</td><td>참가 Hero와 보상 정보를 받아 각 GameDB 우편 시스템으로 점수 보상 지급</td></tr><tr><td><code>spFactionWarRankInit</code></td><td>월·시즌 00시</td><td>해당 GameDB의 Hero 랭킹을 전달받아 일반·시즌 랭킹 정산</td></tr><tr><td><code>spFactionWarRankReward</code></td><td>랭킹 보상 수령</td><td>HeroUniqueID·RankType·RankTime·IsReward 조건 확인 후 아이템 지급</td></tr></tbody></table></div>
+<div class="contract-grid"><div><span class="mini-label">MONTHLY / InitFlag 1</span><h5>일반 랭킹 정산</h5><p>RankTime은 랭킹 집계 시각이며 월·시즌 초기화 시각과 같은 의미로 사용합니다. 전달받은 일반 랭킹을 반영하고 해당 행의 IsReward를 0으로 설정했습니다.</p></div><div><span class="mini-label">SEASON / InitFlag 2</span><h5>일반·시즌 랭킹 재적재</h5><p>기존 GameDB 랭킹을 지운 뒤 전달받은 일반·시즌 랭킹을 다시 적재했습니다.</p></div></div>
+<div class="rule-panel"><span class="mini-label">REWARD GUARD</span><h4>수령 상태 변경 결과로 보상 지급 여부 결정</h4><p><code>HeroUniqueID + RankType + RankTime</code>으로 대상을 식별하고 <code>IsReward = 0</code>인 행만 1로 변경했습니다. 반영된 행이 없으면 오류 <code>50126</code>을 반환하고 아이템을 지급하지 않습니다.</p></div>
+</article></section>
+
+<section id="personal" class="section-shell ruled" aria-labelledby="personal-title">
+<div class="section-heading"><div><p class="eyebrow">03 / PERSONAL PROJECTS</p><h2 id="personal-title">개인 프로젝트</h2></div><span class="section-note">개인 설계·구현 프로젝트</span></div>
+<article class="data-project"><div class="data-copy"><span class="badge">개인 프로젝트</span><h3>게임 재화 ETL &amp; 대시보드</h3><p>재화 변경 로그를 분석 가능한 구조로 바꾸고, 생성·소모·순증감을 탐색할 수 있는 데이터 파이프라인을 구현했습니다.</p><dl class="design-notes"><div><dt>생성량 · 소모량 · 순증감</dt><dd>선택한 기간의 재화 흐름을 요약하고 시간에 따른 변화를 확인합니다.</dd></div><div><dt>서버별 비교</dt><dd>기간·재화·서버 필터로 대상 범위를 좁혀 변화량과 상세 데이터를 탐색합니다.</dd></div><div><dt>생성처 · 사용처 TOP 10</dt><dd>ReasonWhy 기준으로 유입·소모가 발생한 사유를 구분해 살펴봅니다.</dd></div></dl><div class="tags"><span>Python</span><span>pandas</span><span>pyodbc</span><span>SQL Server</span><span>Streamlit</span><span>Plotly</span></div></div><figure class="dashboard"><a href="assets/currency-dashboard.jpg" target="_blank" rel="noopener" aria-label="게임 재화 대시보드 원본 이미지 열기"><img src="assets/currency-dashboard.jpg" alt="개인 프로젝트의 게임 재화 대시보드: 지표 요약, 생성·소모 추이와 사용처별 차트" width="1903" height="4595" loading="lazy"></a><figcaption>대시보드 실행 화면 · 클릭하여 원본 보기</figcaption></figure></article>
+<div class="etl-design"><h4 class="topic-heading">데이터 계층과 적재 설계</h4><div class="table-scroll" tabindex="0" role="region" aria-label="계층 상세 표"><table><thead><tr><th scope="col">계층</th><th scope="col">데이터와 처리</th><th scope="col">설계 의도</th></tr></thead><tbody><tr><td>Raw</td><td>SQL Server · CSV · JSON</td><td>서로 다른 입력을 공통 컬럼으로 정규화</td></tr><tr><td>Python ETL</td><td>필수 컬럼 검증 · CreateDate 증분 추출</td><td>DW의 마지막 적재 시각 이후 데이터 조회</td></tr><tr><td>DW Fact</td><td>BeforeAmount · AfterAmount · 계산 열 ChangeAmount</td><td>변경 이력을 보존하고 변화량 분석 단순화</td></tr><tr><td>Data Mart</td><td>일별 · 서버별 · 재화별 · 사유별 집계</td><td>탐색에 필요한 집계를 별도 계층으로 구성</td></tr><tr><td>View / Dashboard</td><td>단일 View 조회 · Streamlit / Plotly</td><td>시각화 계층의 DB 의존성 축소</td></tr></tbody></table></div><div class="rule-panel"><span class="mini-label">BATCH LOAD</span><p>pyodbc의 <code>fast_executemany</code>로 Fact 테이블에 배치 입력하고 성공 시 commit, 오류 시 rollback하도록 구성했습니다. 원천 SQL Server와 분석용 DW / DM을 별도 계층으로 분리했습니다.</p></div></div><article class="automation-project"><div><span class="badge">개인 프로젝트</span><h3>증빙 이미지 병합 자동화</h3><p>여러 JPG를 열어 수작업으로 배치하던 과정을 폴더 입력 한 번으로 줄이기 위해 만든 Python 도구입니다.</p></div><div><p>폴더 내 JPG를 수집하고 최소 이미지 크기에 맞춰 리사이즈한 뒤, 6열 격자로 병합·저장했습니다. PyInstaller로 실행 파일을 구성해 그룹웨어 도입 전까지 개인 도구로 사용했습니다.</p><p class="small-note">구현 범위: JPG 입력, 6열·4행 기준 캔버스. 다른 확장자, 빈 폴더·손상 이미지 처리와 GUI는 포함하지 않았습니다.</p><div class="tags"><span>Python</span><span>Pillow</span><span>glob</span><span>PyInstaller</span></div></div></article>
+<details class="implementation"><summary>이미지 수집·리사이즈·격자 병합 코드</summary><div class="code-panel"><div class="code-toolbar"><span>Pillow · 6열 격자 배치</span><div><span class="code-language">Python</span><button type="button" class="copy-code">코드 복사</button></div></div><pre tabindex="0" aria-label="Pillow · 6열 격자 배치"><code><span class="code-line">files = glob.glob(Image_path + <span class="tok-string">&quot;*.jpg&quot;</span>)</span>
+<span class="code-line">images = [Image.open(file) <span class="tok-keyword">for</span> file <span class="tok-keyword">in</span> files]</span>
+<span class="code-line"></span>
+<span class="code-line">x_min = <span class="tok-keyword">min</span>(image.size[<span class="tok-number">0</span>] <span class="tok-keyword">for</span> image <span class="tok-keyword">in</span> images)</span>
+<span class="code-line">y_min = <span class="tok-keyword">min</span>(image.size[<span class="tok-number">1</span>] <span class="tok-keyword">for</span> image <span class="tok-keyword">in</span> images)</span>
+<span class="code-line">resized = [</span>
+<span class="code-line">    image.resize((x_min, y_min))</span>
+<span class="code-line">    <span class="tok-keyword">for</span> image <span class="tok-keyword">in</span> images</span>
+<span class="code-line">]</span>
+<span class="code-line"></span>
+<span class="code-line">result = Image.new(<span class="tok-string">&quot;RGB&quot;</span>, canvas_size, (<span class="tok-number">255</span>, <span class="tok-number">255</span>, <span class="tok-number">255</span>))</span>
+<span class="code-line"><span class="tok-keyword">for</span> index, image <span class="tok-keyword">in</span> enumerate(resized):</span>
+<span class="code-line">    x = (index % <span class="tok-number">6</span>) * x_min</span>
+<span class="code-line">    y = (index // <span class="tok-number">6</span>) * y_min</span>
+<span class="code-line">    result.paste(image, (x, y))</span>
+<span class="code-line"></span>
+<span class="code-line">result.save(output_file)</span></code></pre><div class="code-source">실제 구현 코드 발췌. 경로·캔버스 크기·출력 파일 변수는 외부에서 설정합니다.</div></div></details>
+</section>
+<section id="background" class="section-shell ruled" aria-labelledby="background-title">
+<div class="section-heading"><div><p class="eyebrow">04 / BACKGROUND</p><h2 id="background-title">학력 및 자격</h2></div></div>
+<div class="background-grid"><div><h3>Education</h3><article><span class="period">2021.03 — 2023.02</span><h4>한양사이버대학교</h4><p>컴퓨터공학과 · 학사 졸업</p></article><article><span class="period">2013.03 — 2017.02</span><h4>안산대학교</h4><p>글로벌 IT 비즈니스 · 전문학사 졸업</p></article></div><div><h3>Certifications</h3><article><span class="period">2021.06</span><h4>SQLD · SQL 개발자</h4><p>한국데이터산업진흥원</p></article><article><span class="period">2020.10</span><h4>리눅스마스터 2급</h4><p>한국정보통신진흥협회</p></article></div></div>
+</section>
+<footer class="section-shell"><div class="footer-contact"><span class="mini-label">CONTACT</span><a href="mailto:ertt1010@gmail.com">ertt1010@gmail.com</a></div><div class="footer-bottom"><span>© <span id="year">2026</span> 허세원 · DBA</span><a href="#about">맨 위로</a></div></footer><div class="copy-status" role="status" aria-live="polite"></div>
+</main></body></html>
+
