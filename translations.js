@@ -1,4 +1,6 @@
 window.portfolioTranslations = {
+  "자격": "Certifications",
+  "자격증": "Certifications",
   "허세원 | DBA · 데이터베이스 운영과 개발": "Sewon Heo | DBA · Database Operations & Development",
   "본문 바로가기": "Skip to content",
   "소개": "About",

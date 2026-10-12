@@ -37,7 +37,7 @@
     root.lang = language;
     textEntries.forEach(entry => { entry.node.textContent = language === 'en' ? entry.translated : entry.original; });
     if (language === 'en') {
-      const menuLabels = ['About', 'Experience', 'Work', 'Projects', 'Background'];
+      const menuLabels = ['About', 'Experience', 'Work', 'Projects', 'Certifications'];
       links.forEach((link, index) => { link.firstChild.textContent = menuLabels[index]; });
     }
     attributeEntries.forEach(entry => entry.element.setAttribute(entry.attribute, language === 'en' ? entry.translated : entry.original));
